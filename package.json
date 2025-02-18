@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-router": "*"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "html-webpack-plugin": "*",
+    "sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "typescript-eslint": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  },
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "format": "npx eslint --fix src",
+    "start": "webpack serve --mode=development --open"
+  }
+}
