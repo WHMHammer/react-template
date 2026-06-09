@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "jsx": "react-jsx",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "noImplicitAny": true,
+    "outDir": "./dist/",
+    "target": "es2017",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}

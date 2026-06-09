@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^7.17.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.16",
+    "@craftamap/esbuild-plugin-html": "^0.9.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitest/browser-playwright": "^4.1.8",
+    "esbuild": "^0.28.0",
+    "esbuild-sass-plugin": "^3.7.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "sass": "^1.100.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8",
+    "vitest-browser-react": "^2.2.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "node esbuild-scripts/build-prod.mts",
+    "format": "npx @biomejs/biome check --write",
+    "prepare": "husky && npx playwright install",
+    "start": "node esbuild-scripts/start-dev.mts",
+    "test": "vitest run"
+  },
+  "type": "module"
+}
