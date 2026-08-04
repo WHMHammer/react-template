@@ -1,0 +1,86 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
+  "assist": {
+    "actions": {
+      "recommended": true,
+      "source": {
+        "recommended": true
+      }
+    },
+    "enabled": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      ".vscode/**",
+      "src/**",
+      "tests/**",
+      ".lintstagedrc.mjs",
+      "biome.json",
+      "package.json",
+      "tsconfig.app.json",
+      "tsconfig.json",
+      "tsconfig.node.json",
+      "vite.config.ts"
+    ]
+  },
+  "formatter": {
+    "attributePosition": "multiline",
+    "enabled": true,
+    "expand": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "auto"
+  },
+  "javascript": {
+    "formatter": {
+      "operatorLinebreak": "before",
+      "quoteProperties": "preserve",
+      "quoteStyle": "single"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": "error",
+      "complexity": {
+        "recommended": true
+      },
+      "correctness": "error",
+      "nursery": {
+        "noMultiAssign": "error",
+        "useExplicitReturnType": "error",
+        "useExplicitType": "error"
+      },
+      "performance": {
+        "recommended": true,
+        "useTopLevelRegex": "warn"
+      },
+      "recommended": true,
+      "security": {
+        "recommended": true
+      },
+      "style": {
+        "noCommonJs": "warn",
+        "noDefaultExport": "warn",
+        "noNestedTernary": "info",
+        "noSubstr": "info",
+        "recommended": true,
+        "useForOf": "info",
+        "useNamingConvention": "info"
+      },
+      "suspicious": {
+        "noBitwiseOperators": "info",
+        "noEvolvingTypes": "warn",
+        "recommended": true,
+        "useAwait": "warn"
+      }
+    }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "enabled": true,
+    "useIgnoreFile": true
+  }
+}

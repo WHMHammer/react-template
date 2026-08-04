@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // type checking
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    // modules,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
+
+    // emit
+    "noEmit": true,
+    // "outDir": "./webpack-dist/",
+    "removeComments": true,
+    "sourceMap": false,
+
+    // javascript support
+    "allowJs": false,
+
+    // interop constraints
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+
+    // language and environment
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"],
+    "target": "esnext",
+
+    // output formatting
+    "noErrorTruncation": true
+  }
+}
